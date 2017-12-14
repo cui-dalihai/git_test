@@ -10,3 +10,6 @@ from C
 
 holy new function incomming....
 
+
+
+older version
