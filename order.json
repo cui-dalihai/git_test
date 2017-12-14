@@ -1,0 +1,65 @@
+
+first_request_data :
+{
+    u'header': {
+        u'payLoadVersion': 1,
+        u'namespace': u'AliGenie.Iot.Device.Query',
+        u'name': u'Query',
+        u'messageId': u'f3a7223a-25e9-487e-866b-5f272954e192'
+    },
+    u'payload': {
+        u'attribute': u'',
+        u'value': u'',
+        u'deviceType': u'smartbed',
+        u'deviceId': u'ebf99816-ce8b-11e7-86c3-00163e105361',
+        u'accessToken': u'Mor0I4SxagiZaigJjoF5j8tTuQB5Fv'
+    }
+}
+first-response:
+{
+    u'header': {
+        u'payLoadVersion': 1,
+        u'namespace': u'AliGenie.Iot.Device.Query',
+        u'name': u'QueryResponse',
+        u'messageId': u'f3a7223a-25e9-487e-866b-5f272954e192'
+    },
+    u'payload': {
+        u'deviceId': u'ebf99816-ce8b-11e7-86c3-00163e105361'
+    },
+    u'properties': [
+        {
+            u'name': u'powerstate',
+            u'value': u'on'
+        }
+    ]
+}
+--------------------------------------------------------------------
+Second-request:
+{
+  u'header': {
+    u'payLoadVersion': 1,
+    u'namespace': u'AliGenie.Iot.Device.Control',
+    u'name': u'SetMode',
+    u'messageId': u'd71f82de-4bbe-4293-8e4f-9ec8accf7178'
+  },
+  u'payload': {
+    u'attribute': u'mode',
+    u'value': u'reading',
+    u'deviceType': u'smartbed',
+    u'deviceId': u'ebf99816-ce8b-11e7-86c3-00163e105361',
+    u'accessToken': u'Mor0I4SxagiZaigJjoF5j8tTuQB5Fv'
+  }
+}
+
+Second-Response:
+{
+  u'header': {
+    u'payLoadVersion': 1,
+    u'namespace': u'AliGenie.Iot.Device.Control',
+    u'name': u'SetModeResponse',
+    u'messageId': u'd71f82de-4bbe-4293-8e4f-9ec8accf7178'
+  },
+  u'payload': {
+    u'deviceId': u'ebf99816-ce8b-11e7-86c3-00163e105361'
+  }
+}
